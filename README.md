@@ -6,7 +6,7 @@
 
 `pod repo add mobilu https://github.com/axelline/Specs`
 
-* Update version in `PolarisOfficeSDK.podspec`
+* Update version in `ABBYY.podspec`
 
 `s.version = 'X.X.X.X'`
 
@@ -16,4 +16,4 @@
 
 * Update the private Mobilu repository
 
-`pod repo push mobilu PolarisOfficeSDK.podspec --allow-warnings --verbose`
+`pod repo push mobilu ABBYY.podspec --allow-warnings --verbose`
