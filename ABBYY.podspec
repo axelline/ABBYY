@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.library       = 'c++'
   s.xcconfig      = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ABBYY/**"',
 		      'LD_RUNPATH_SEARCH_PATHS' => '"$(PODS_ROOT)/ABBYY"' }
+  s.frameworks    = 'CoreMedia'
 
   s.requires_arc = true
 end
