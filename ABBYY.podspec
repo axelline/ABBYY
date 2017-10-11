@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.1'
   s.source       = { :git => 'https://github.com/axelline/ABBYY.git', :tag => s.version.to_s }
 
-  s.publicHeaderFiles = 'AbbyyRtrSDK.framework/Headers/*.h'
-  s.preservePath = 'AbbyyRtrSDK.framework'
+  s.public_header_files = 'AbbyyRtrSDK.framework/Headers/*.h'
+  s.preserve_path = 'AbbyyRtrSDK.framework'
   s.resources 		= 'assets/Dictionaries', 'assets/Patterns'
   s.vendored_framework	= 'AbbyyRtrSDK.framework'
 
