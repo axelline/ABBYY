@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
-  s.name         = 'ABBYY'
+  s.name         = 'AbbyyRtrSDK'
   s.version      = '1.0.7.56'
-  s.homepage     = 'https://www.abbyy.com/en-eu/mobile-ocr/iphone-ocr/'
-  s.license      = 'MIT'
-  s.author       = { 'Mobilu' => 'team@mobilu.lu' }
+  spec.license   = { :type => 'ABBYY', :file => 'ABBYY' }
+  s.homepage     = 'http://www.rtrsdk.com'
+  s.authors      = { 'ABBYY SDK' => 'sdk@abbyy.com' }
   s.summary      = 'ABBYY SDK'
   s.description  = 'ABBYY SDK Pod for Mobilu'
   s.platform     = :ios, '8.0'
@@ -15,10 +15,14 @@ Pod::Spec.new do |s|
   s.library       = 'c++'
   s.xcconfig      = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ABBYY/**"',
 		      'LD_RUNPATH_SEARCH_PATHS' => '"$(PODS_ROOT)/ABBYY"' }
-  s.frameworks    = 'CoreMedia'
+  s.frameworks    = 'Foundation'
 
   s.requires_arc = true
-  s.pod_target_xcconfig = {
+  spec.pod_target_xcconfig = {
+
     'OTHER_LDFLAGS' => '-lc++',
+
+    'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/#{spec.name}/**'
+
   }
 end
