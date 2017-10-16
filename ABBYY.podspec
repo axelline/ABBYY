@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
     'OTHER_LDFLAGS' => '-lc++',
     'HEADER_SEARCH_PATHS' => '${PODS_ROOT}/ABBYY/**'
   }
-  s.frameworks    = 'Foundation'
+  s.frameworks    = 'Foundation', 'CoreMedia'
 
   s.requires_arc = true
 end
