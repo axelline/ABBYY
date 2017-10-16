@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.vendored_framework  = 'AbbyyRtrSDK.framework'
 
   s.library       = 'c++'
-  s.xcconfig      = {
+  s.pod_target_xcconfig      = {
     'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/ABBYY/**"',
     'LD_RUNPATH_SEARCH_PATHS' => '"$(PODS_ROOT)/ABBYY"',
     'OTHER_LDFLAGS' => '-lc++',
