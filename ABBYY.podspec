@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
   s.name         = 'ABBYY'
   s.version      = '1.0.7.56'
   s.homepage     = 'https://www.abbyy.com/en-eu/mobile-ocr/iphone-ocr/'
-  s.license      = 'proprietary'
+  s.license      = 'MIT'
   s.author       = { 'Mobilu' => 'team@mobilu.lu' }
   s.summary      = 'ABBYY SDK'
   s.description  = 'ABBYY SDK Pod for Mobilu'
@@ -18,4 +18,7 @@ Pod::Spec.new do |s|
   s.frameworks    = 'CoreMedia'
 
   s.requires_arc = true
+  s.pod_target_xcconfig = {
+    'OTHER_LDFLAGS' => '-lc++',
+  }
 end
