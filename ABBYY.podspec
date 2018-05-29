@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.summary      = 'ABBYY SDK'
   s.description  = 'ABBYY SDK Pod for Mobilu'
   s.platform     = :ios, '8.0'
-  s.source       = { :git => 'https://github.com/axelline/ABBYY.git', :tag => s.version.to_s }
+  s.source       = { :git => 'ssh://git@github.com/axelline/ABBYY.git', :tag => s.version.to_s }
 
   s.resources     = 'assets/Dictionaries', 'assets/Patterns'
   s.vendored_framework  = 'AbbyyRtrSDK.framework'
